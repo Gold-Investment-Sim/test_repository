@@ -25,13 +25,17 @@
   flex-direction: column;
   gap: 6px;
   font-size: 12px;
-  color: #6b7280;
+  color: #191a1c;
 }
 
-.field input[type="date"] {
+/* frontend/src/styles/SimulationDashboard.css */
+
+/* 기존의 .field input[type="date"] 규칙을 아래 코드로 변경하세요. */
+.field input {
   padding: 8px 10px;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
+  color: #1f2937; /* 글자색을 어둡게 지정 */
 }
 
 .unit-group {
@@ -45,6 +49,7 @@
   border-radius: 10px;
   background: #fff;
   font-size: 13px;
+  color: #1f2937;
 }
 
 .unit.active {
@@ -75,6 +80,7 @@
   background: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
+  color: #1f2937;
 }
 
 .card-head {
@@ -205,6 +211,7 @@
   /* 흰색 배경 */
   cursor: pointer;
   transition: all .15s ease;
+  color: #1f2937;
 }
 
 .range-card:hover {
