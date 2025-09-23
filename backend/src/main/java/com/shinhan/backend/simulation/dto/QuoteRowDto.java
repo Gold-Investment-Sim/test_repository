@@ -7,22 +7,18 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConstructor // [수정됨] 모든 필드를 인자로 받는 생성자 자동 생성
 public class QuoteRowDto {
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    private LocalDate date;
+    // [수정됨] 프론트엔드와 데이터 형식을 맞추기 위해 String으로 변경
+    private String date;
 
     private Double fx_rate;
     private Double vix;
     private Double etf_volume;
     private Double gold_close;
-    private Double pred_close;   // LSTM 예측 없으면 null
-
-    public QuoteRowDto(String string, double fxRate, double vix, double etfVolume, double goldClose, Object predClose) {
-    }
+    private Double pred_close;
 }
