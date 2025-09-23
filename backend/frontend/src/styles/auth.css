@@ -17,7 +17,7 @@ html,
 body {
   height: 100%;
   margin: 0;
-  overflow: hidden;
+  /*overflow: hidden; 여기가 원흉이었구만!*/
 }
 
 #root {

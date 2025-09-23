@@ -23,7 +23,7 @@ a:hover {
 }
 
 html, body, #root {
-  height: 100%;   /* 화면 꽉 차게 */
+  /*height: 100%;    이것도 원흉이구만! 화면 꽉 차게 */
   margin: 0;
   padding: 0;
   min-width: 320px;
