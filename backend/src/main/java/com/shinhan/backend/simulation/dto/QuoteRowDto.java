@@ -22,4 +22,7 @@ public class QuoteRowDto {
     private Double etf_volume;
     private Double gold_close;
     private Double pred_close;   // LSTM 예측 없으면 null
+
+    public QuoteRowDto(String string, double fxRate, double vix, double etfVolume, double goldClose, Object predClose) {
+    }
 }
